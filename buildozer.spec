@@ -37,12 +37,12 @@ version = 0.1
 
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
-requirements = python3,kivy,SpeechRecognition
+requirements = python3,kivy,SpeechRecognition,pyaudio
 
 # (str) Custom source folders for requirements
 # Sets custom source for any requirements with recipes
 # requirements.source.kivy = ../../kivy
-requirements.source.pyaudio = "./pyaudio/PyAudio-0.2.13"
+requirements.source.pyaudio = ./pyaudio
 # (str) Presplash of the application
 #presplash.filename = %(source.dir)s/data/presplash.png
 
