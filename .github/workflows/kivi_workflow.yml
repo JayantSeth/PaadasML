@@ -15,8 +15,8 @@ jobs:
        - name: Install gcc-multilib
          run: sudo apt-get install gcc-multilib
 
-       - name: Install PyAudio
-         run: pip install PyAudio
+       - name: Install PyAudio dependencies
+         run: sudo apt install portaudio19-dev python3-pyaudio
 
        - name: Build with Buildozer
          uses: ArtemSBulgakov/buildozer-action@v1
