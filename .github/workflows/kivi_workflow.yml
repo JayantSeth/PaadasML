@@ -17,6 +17,9 @@ jobs:
 
        - name: Install PyAudio dependencies
          run: sudo apt install portaudio19-dev python3-pyaudio
+       
+       - name: Install PyAudio
+         run: pip install PyAudio
 
        - name: Build with Buildozer
          uses: ArtemSBulgakov/buildozer-action@v1
