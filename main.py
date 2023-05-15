@@ -5,6 +5,7 @@ import random
 from kivy.uix.textinput import TextInput
 import time
 import speech_recognition as sr
+import os
 
 def play(file):
     sound = SoundLoader.load(file)
@@ -67,7 +68,8 @@ class PaadasML(App):
             else:
                 print(answer)
                 play("prompt/incorrect.wav")
-                play("numbers/" + answer + ".wav")
+                if (os.path.exists(os.path.join("numbers", answer, ".wav"))):
+                    play("numbers/" + answer + ".wav")
                 play("prompt/incorrect.wav")
 
             # revise the problem
